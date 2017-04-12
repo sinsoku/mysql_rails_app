@@ -15,8 +15,5 @@ build:
       name: install dependencies
       code: apt-get update -qq && apt-get install -y build-essential nodejs
     - script:
-        name: setup
-        code: bin/setup
-    - script:
         name: rails db:create
         code: bundle exec rails db:create
