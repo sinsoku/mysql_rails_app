@@ -1,0 +1,14 @@
+box: ruby:2.4.0
+services:
+  - mysql
+
+build:
+  steps:
+    - bundle-install
+    - rails-database-yml
+    - script:
+        name: setup
+        code: bin/setup
+    - script:
+        name: rails db:create
+        code: bundle exec rails db:create
