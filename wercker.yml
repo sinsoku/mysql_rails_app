@@ -5,7 +5,7 @@ box:
 services:
   - id: mysql
     env:
-      MYSQL_ROOT_PASSWORD: password
+      MYSQL_ALLOW_EMPTY_PASSWORD: yes
 
 build:
   steps:
