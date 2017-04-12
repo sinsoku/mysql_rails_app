@@ -1,4 +1,7 @@
-box: ruby:2.4.0
+box:
+  id: ruby:2.4.0
+  env:
+    RAILS_ENV: test
 services:
   - id: mysql
     env:
