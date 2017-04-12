@@ -1,6 +1,8 @@
 box: ruby:2.4.0
 services:
-  - mysql
+  - id: mysql
+    env:
+      MYSQL_ROOT_PASSWORD: password
 
 build:
   steps:
